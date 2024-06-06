@@ -1,0 +1,4 @@
+sources:
+  - url: "https://example.com/proxies"
+    type: "html"
+    selector: ".proxy-list .proxy"
