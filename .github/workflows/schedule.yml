@@ -1,6 +1,7 @@
 name: Schedule Node Collection
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'  # 每天UTC时间0点运行
   push:
