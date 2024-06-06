@@ -4,8 +4,11 @@ on:
   schedule:
     - cron: '0 0 * * *'  # 每天UTC时间0点运行
   push:
-    branches:
-      - main  # 当推送到main分支时也运行
+    paths:
+      - 'config/config.yml'
+      - 'data/nodes.json'
+      - 'result/test_results.json'
+      - 'scripts/*'
 
 jobs:
   build:
